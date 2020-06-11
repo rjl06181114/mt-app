@@ -1,0 +1,30 @@
+@import "./topbar.scss";
+@import "./search.scss";
+.m-header {
+    @at-root .layout-default {
+        .el-header {
+            padding: 0;
+            .m-header {
+                width: 100%;
+                background-color: #f8f8f8;
+            }
+        }
+    }
+    >.el-row:nth-child(1) {
+        width: 1190px;
+        margin: 0 auto;
+        z-index: 9999;
+        height: 40px;
+        line-height: 40px;
+    }
+    >.el-row:nth-child(2) {
+        background: #ffffff;
+        .search-panel {
+            width: 1190px;
+            margin: 0 auto;
+        }
+    }
+    >.el-main {
+        overflow: unset;
+    }
+}
